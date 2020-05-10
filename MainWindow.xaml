@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RunningButton"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Running Button" Height="450" Width="800">
+    <Canvas Name="myCanvas" Height="400" Width="700">
+        <Button Name="RunningButton" Content="Catch me" Background="Aquamarine"  Padding="16" MouseEnter="RunningButton_MouseEnter" 
+                Height="50" Width="100"/>
+
+    </Canvas>
 </Window>

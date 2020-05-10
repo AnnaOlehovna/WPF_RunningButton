@@ -24,5 +24,14 @@ namespace RunningButton
         {
             InitializeComponent();
         }
+
+        private void RunningButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Point p = Mouse.GetPosition(myCanvas);
+            Random R = new Random();
+
+            Canvas.SetTop(RunningButton, R.Next(0, (int)(myCanvas.Height - RunningButton.Height)));
+            Canvas.SetLeft(RunningButton, R.Next(0, (int)(myCanvas.Width - RunningButton.Width)));
+        }
     }
 }
